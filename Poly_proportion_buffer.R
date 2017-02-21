@@ -1,5 +1,9 @@
-C_poly_proportion_buffer = function(points, target_sp, width=500, id_field=NULL){
-  # You should project your spatial dataset before execution.
+C_poly_proportion_buffer = function(points, target_sp, width = 500, id_field = NULL){
+  # Disclaimer: You should project your spatial dataset before execution.
+  # points: SpatialPointsDataFrame
+  # target_sp: SpatialPolygonsDataFrame. Target dataset.
+  # width: Integer. Its unit follows meter in default.
+  # id_field: Character. Name of the identifier field
   library(rgeos)
   library(sp)
   library(rgdal)
